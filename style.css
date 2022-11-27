@@ -11,7 +11,7 @@ body {
 }
 
 .img-sm {
-    width: 40px;
+    width: 50px;
 }
 
 .img-lg {
@@ -44,6 +44,14 @@ body {
 
 .logo {
     font-size: 24px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+}
+
+.logo .mdi.mdi-view-dashboard {
+    font-size: 40px;
+    margin-right: 14px;
 }
 
 .sidebar ul {
@@ -56,8 +64,19 @@ body {
     margin: 16px 0;
 }
 
+.sidebar li a {
+    font: inherit;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar li a:hover {
+    color: var(--lighter-blue);
+}
+
 .sidebar .mdi {
     margin-right: 30px;
+    vertical-align: middle;
 }
 
 .header {
@@ -111,13 +130,6 @@ body {
     grid-template-columns: min-content 1fr;
 }
 
-/* .user-info img {
-    width: 60px;
-    margin-right: 1rem;
-    align-content: center;
-    justify-content: center;
-} */
-
 .greeting {
     font-size: 12px;
 }
@@ -125,6 +137,7 @@ body {
 .user-name {
     font-size: 20px;
     font-weight: bold;
+    margin-left: 16px;
 }
 
 .header-btns {
@@ -143,6 +156,7 @@ button {
     border: none;
     justify-self: center;
     align-self: center;
+    cursor: pointer;
 }
 
 .content {
@@ -206,7 +220,7 @@ button {
 .trending-content {
     background-color: #fff;
     border-radius: 5px;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     box-shadow: 1px 1px 5px gray;
 }
 
@@ -245,4 +259,13 @@ button {
 .trending-item p {
     margin: 0;
     color: var(--gray);
+}
+
+footer {
+    height: 5rem;
+    text-align: center;
+}
+
+footer p {
+    line-height: 5;
 }
